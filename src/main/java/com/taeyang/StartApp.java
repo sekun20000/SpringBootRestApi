@@ -4,8 +4,13 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.SpringApplication;
 
 @SpringBootApplication
-public class startApp {
+public class StartApp {
     public static void main(String[] args) {
-        SpringApplication.run(startApp.class,args);
+        try {
+            SpringApplication.run(StartApp.class,args);
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+
     }
 }
